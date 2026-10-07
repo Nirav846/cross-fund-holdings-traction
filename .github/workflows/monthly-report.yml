@@ -124,6 +124,9 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${OVERWRITE}" = "true" ]; then
             ARGS+=(--overwrite)
           fi
+          # Tolerate a couple of renamed/delisted funds so one stale entry in
+          # the funds file cannot block the whole monthly report.
+          ARGS+=(--max-failures 3)
           python3 scripts/download_rupeevest_funds.py "${ARGS[@]}"
 
       - name: Run month pipeline

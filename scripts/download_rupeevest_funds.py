@@ -69,6 +69,16 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         action="store_true",
         help="Resolve fund names to scheme codes only; no download",
     )
+    parser.add_argument(
+        "--max-failures",
+        type=int,
+        default=0,
+        help=(
+            "Exit 0 while at most this many funds fail (default 0 = any failure "
+            "is fatal). Use a small budget so one renamed fund on RupeeVest "
+            "does not abort the whole monthly run."
+        ),
+    )
     return parser.parse_args(argv)
 
 
@@ -121,8 +131,21 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Wrote {result.path} ({result.fund_name})", file=sys.stderr)
         ok += 1
 
-    print(f"Done: {ok} saved, {fail} failed", file=sys.stderr)
-    return 0 if fail == 0 else 1
+    total = ok + fail
+    print(
+        f"Done: {ok}/{total} saved, {fail} failed "
+        f"(max allowed failures: {args.max_failures})",
+        file=sys.stderr,
+    )
+    if fail and fail > args.max_failures:
+        print(
+            f"FAIL: {fail} failed exceeds --max-failures={args.max_failures}. "
+            "Likely a RupeeVest fund rename — check names in the funds file "
+            "against the site search, or raise --max-failures to tolerate it.",
+            file=sys.stderr,
+        )
+        return 1
+    return 0
 
 
 if __name__ == "__main__":

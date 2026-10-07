@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import importlib.util
+import json
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -168,6 +170,120 @@ def test_download_overwrite(tmp_path: Path) -> None:
     assert again.error is None
     assert again.path is not None
     assert "Equity Holdings" in again.path.read_text(encoding="utf-8")
+
+
+_SCRIPT_PATH = (
+    Path(__file__).resolve().parents[1] / "scripts" / "download_rupeevest_funds.py"
+)
+_FUNDS_FILE = (
+    Path(__file__).resolve().parents[1] / "config" / "rupeevest_funds.example.txt"
+)
+_INDEX_SNAPSHOT = (
+    Path(__file__).resolve().parent / "fixtures" / "rupeevest_index_snapshot.json"
+)
+
+
+def _run_download_main(argv: list[str]) -> int:
+    """Invoke download_rupeevest_funds.main() in a subprocess-free way."""
+    spec = importlib.util.spec_from_file_location("_dl_script", _SCRIPT_PATH)
+    assert spec and spec.loader
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return int(module.main(argv))
+
+
+def test_max_failures_tolerates_one_stale_fund_name(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """One renamed fund must not abort the whole download run."""
+    funds_file = tmp_path / "funds.txt"
+    funds_file.write_text("Demo Fund-Reg(G)\nRenamed Fund(G)\n", encoding="utf-8")
+    index = FundSearchIndex.from_mapping({"Demo Fund-Reg(G)": "42"})
+    with (
+        patch(
+            "mf_screener.ingest.rupeevest.fetch_portfolio_tracker",
+            return_value=SAMPLE_PAYLOAD,
+        ),
+        patch("mf_screener.ingest.rupeevest.load_search_index", return_value=index),
+    ):
+        rc = _run_download_main(
+            [
+                "--funds-file",
+                str(funds_file),
+                "--out-dir",
+                str(tmp_path),
+                "--delay",
+                "0",
+                "--max-failures",
+                "1",
+            ]
+        )
+    assert rc == 0
+    err = capsys.readouterr().err
+    assert "Renamed Fund(G)" in err
+    assert "Done: 1/2 saved, 1 failed" in err
+
+
+def test_max_failures_default_zero_still_fails_closed(tmp_path: Path) -> None:
+    """Default behaviour is unchanged: any failure is fatal."""
+    funds_file = tmp_path / "funds.txt"
+    funds_file.write_text("Renamed Fund(G)\n", encoding="utf-8")
+    index = FundSearchIndex.from_mapping({"Demo Fund-Reg(G)": "42"})
+    with patch("mf_screener.ingest.rupeevest.load_search_index", return_value=index):
+        rc = _run_download_main(
+            [
+                "--funds-file",
+                str(funds_file),
+                "--out-dir",
+                str(tmp_path),
+                "--delay",
+                "0",
+            ]
+        )
+    assert rc == 1
+
+
+def test_max_failures_exceeded_is_fatal(tmp_path: Path) -> None:
+    funds_file = tmp_path / "funds.txt"
+    funds_file.write_text("Missing A\nMissing B\n", encoding="utf-8")
+    index = FundSearchIndex.from_mapping({"Demo Fund-Reg(G)": "42"})
+    with patch("mf_screener.ingest.rupeevest.load_search_index", return_value=index):
+        rc = _run_download_main(
+            [
+                "--funds-file",
+                str(funds_file),
+                "--out-dir",
+                str(tmp_path),
+                "--delay",
+                "0",
+                "--max-failures",
+                "1",
+            ]
+        )
+    assert rc == 1
+
+
+def test_shipped_funds_file_all_resolve_in_index() -> None:
+    """Guards against RupeeVest renaming a fund and breaking the GHA step.
+
+    Offline: resolves each shipped name against a recorded snapshot of the live
+    RupeeVest search index, so a rename on RupeeVest's side (e.g. 'Flexicap'
+    vs 'Flexi Cap') fails here instead of aborting the monthly GHA step.
+    """
+    names = [
+        line.strip()
+        for line in _FUNDS_FILE.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.strip().startswith("#")
+    ]
+    assert names
+    snapshot = json.loads(_INDEX_SNAPSHOT.read_text(encoding="utf-8"))
+    index = FundSearchIndex.from_mapping({n: str(i) for i, n in enumerate(snapshot)})
+    unresolved = [n for n in names if index.resolve(n) is None]
+    assert unresolved == [], (
+        "Funds file names not found in the recorded RupeeVest index snapshot: "
+        f"{unresolved}. If RupeeVest renamed a fund, update the funds file and "
+        "regenerate tests/fixtures/rupeevest_index_snapshot.json."
+    )
 
 
 def test_http_get_json_retries_on_url_error() -> None:
