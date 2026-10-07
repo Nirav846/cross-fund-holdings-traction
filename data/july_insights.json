@@ -1,0 +1,242 @@
+{
+  "monthId": "2026-07",
+  "source": "rules",
+  "report": "/home/runner/work/cross-fund-holdings-traction/cross-fund-holdings-traction/output/json/july_traction.json",
+  "topTraction": [
+    {
+      "rank": 1,
+      "stockKey": "NAME:torrent pharmaceuticals",
+      "name": "Torrent Pharmaceuticals Limited",
+      "score": 492.6541,
+      "fundCount": 17,
+      "fundDelta": 17,
+      "addCount": 15,
+      "reduceCount": 1,
+      "pctVsMid": "1.4524",
+      "pctVsSma": "1.4524",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 2,
+      "stockKey": "NAME:indo mim",
+      "name": "Indo-MIM Limited",
+      "score": 210.4,
+      "fundCount": 16,
+      "fundDelta": 16,
+      "addCount": 16,
+      "reduceCount": 0,
+      "pctVsMid": "",
+      "pctVsSma": "",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 3,
+      "stockKey": "NAME:adani enterprises",
+      "name": "Adani Enterprises Limited",
+      "score": 164.8132,
+      "fundCount": 9,
+      "fundDelta": 9,
+      "addCount": 7,
+      "reduceCount": 0,
+      "pctVsMid": "-3.117",
+      "pctVsSma": "-3.117",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 4,
+      "stockKey": "NAME:biocon",
+      "name": "Biocon Limited",
+      "score": 122.4197,
+      "fundCount": 9,
+      "fundDelta": 9,
+      "addCount": 7,
+      "reduceCount": 0,
+      "pctVsMid": "-2.1114",
+      "pctVsSma": "-2.1114",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 5,
+      "stockKey": "NAME:360 one wam",
+      "name": "360 One WAM Limited",
+      "score": 119.4689,
+      "fundCount": 13,
+      "fundDelta": 13,
+      "addCount": 9,
+      "reduceCount": 0,
+      "pctVsMid": "8.0924",
+      "pctVsSma": "8.0924",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 6,
+      "stockKey": "NAME:laser power and infra",
+      "name": "Laser Power And Infra Limited",
+      "score": 117.5,
+      "fundCount": 5,
+      "fundDelta": 5,
+      "addCount": 5,
+      "reduceCount": 0,
+      "pctVsMid": "",
+      "pctVsSma": "",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 7,
+      "stockKey": "NAME:icici bank",
+      "name": "ICICI Bank Limited",
+      "score": 112.3305,
+      "fundCount": 25,
+      "fundDelta": 25,
+      "addCount": 9,
+      "reduceCount": 1,
+      "pctVsMid": "1.5378",
+      "pctVsSma": "1.5378",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 8,
+      "stockKey": "NAME:mahindra and mahindra",
+      "name": "Mahindra & Mahindra Limited",
+      "score": 106.8144,
+      "fundCount": 19,
+      "fundDelta": 19,
+      "addCount": 7,
+      "reduceCount": 1,
+      "pctVsMid": "8.2795",
+      "pctVsSma": "8.2795",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 9,
+      "stockKey": "NAME:one 97 communications",
+      "name": "One 97 Communications Limited",
+      "score": 99.698,
+      "fundCount": 17,
+      "fundDelta": 17,
+      "addCount": 9,
+      "reduceCount": 2,
+      "pctVsMid": "30.1352",
+      "pctVsSma": "30.1352",
+      "persistenceStatus": "unknown"
+    },
+    {
+      "rank": 10,
+      "stockKey": "NAME:kusumgar",
+      "name": "Kusumgar Limited",
+      "score": 93.1,
+      "fundCount": 7,
+      "fundDelta": 7,
+      "addCount": 7,
+      "reduceCount": 0,
+      "pctVsMid": "",
+      "pctVsSma": "",
+      "persistenceStatus": "unknown"
+    }
+  ],
+  "insights": [
+    {
+      "id": "ins_01",
+      "section": "still_early",
+      "headline": "Still early: Adani Enterprises Limited",
+      "action": "research",
+      "stockKeys": [
+        "NAME:adani enterprises"
+      ],
+      "body": "Adani Enterprises Limited shows multi-fund adds while price is still near the 30d SMA (funds 0\u21929, pctVsSma=-3.117; funds include Tata Flexi Cap 07, Tata Digital India 07). Next: open the stock card and compare add breadth vs how far price already moved.",
+      "citations": [
+        {
+          "stockKey": "NAME:adani enterprises",
+          "fields": {
+            "fundCount": 9,
+            "addCount": 7,
+            "reduceCount": 0,
+            "pctVsSma": "-3.117"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_02",
+      "section": "still_early",
+      "headline": "Still early: Biocon Limited",
+      "action": "research",
+      "stockKeys": [
+        "NAME:biocon"
+      ],
+      "body": "Biocon Limited shows multi-fund adds while price is still near the 30d SMA (funds 0\u21929, pctVsSma=-2.1114; funds include Kotak Midcap 07, Canara Rob Flexi Cap 07). Next: open the stock card and compare add breadth vs how far price already moved.",
+      "citations": [
+        {
+          "stockKey": "NAME:biocon",
+          "fields": {
+            "fundCount": 9,
+            "addCount": 7,
+            "reduceCount": 0,
+            "pctVsSma": "-2.1114"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_03",
+      "section": "still_early",
+      "headline": "Still early: Ideaforge Technology Limited",
+      "action": "research",
+      "stockKeys": [
+        "NAME:ideaforge technology"
+      ],
+      "body": "Ideaforge Technology Limited shows multi-fund adds while price is still near the 30d SMA (funds 0\u21924, pctVsSma=-4.9789; funds include Helios Small Cap 07, Franklin India Small Cap Fund G 07). Next: open the stock card and compare add breadth vs how far price already moved.",
+      "citations": [
+        {
+          "stockKey": "NAME:ideaforge technology",
+          "fields": {
+            "fundCount": 4,
+            "addCount": 4,
+            "reduceCount": 0,
+            "pctVsSma": "-4.9789"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_04",
+      "section": "debate",
+      "headline": "Debate: Torrent Pharmaceuticals Limited",
+      "action": "caution",
+      "stockKeys": [
+        "NAME:torrent pharmaceuticals"
+      ],
+      "body": "Torrent Pharmaceuticals Limited shows fund disagreement (addCount=15, reduceCount=1, fundCount=17; funds include Motilal Oswal Manufacturing 07, Axis Small Cap 07). Next: open add and reduce fund cards and note which AMCs disagree.",
+      "citations": [
+        {
+          "stockKey": "NAME:torrent pharmaceuticals",
+          "fields": {
+            "fundCount": 17,
+            "addCount": 15,
+            "reduceCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_05",
+      "section": "debate",
+      "headline": "Debate: ICICI Bank Limited",
+      "action": "caution",
+      "stockKeys": [
+        "NAME:icici bank"
+      ],
+      "body": "ICICI Bank Limited shows fund disagreement (addCount=9, reduceCount=1, fundCount=25; funds include Axis Midcap 07, Bandhan Midcap 07). Next: open add and reduce fund cards and note which AMCs disagree.",
+      "citations": [
+        {
+          "stockKey": "NAME:icici bank",
+          "fields": {
+            "fundCount": 25,
+            "addCount": 9,
+            "reduceCount": 1
+          }
+        }
+      ]
+    }
+  ]
+}

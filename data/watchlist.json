@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "stockKey": "NAME:360 one wam",
+      "name": "360 One WAM Limited",
+      "nse": "360ONE",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:63 moons technologies",
+      "name": "63 moons technologies limited",
+      "nse": "",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:adani enterprises",
+      "name": "Adani Enterprises Limited",
+      "nse": "ADANIENT",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:biocon",
+      "name": "Biocon Limited",
+      "nse": "BIOCON",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:bosch",
+      "name": "Bosch Limited",
+      "nse": "BOSCHLTD",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:delhivery",
+      "name": "Delhivery Limited",
+      "nse": "DELHIVERY",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:dhoot transmission",
+      "name": "Dhoot Transmission Ltd.",
+      "nse": "",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:diamond power infrastructure",
+      "name": "Diamond Power Infrastructure Ltd.",
+      "nse": "",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:dixon technologies",
+      "name": "Dixon Technologies (India) Limited",
+      "nse": "DIXON",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:foseco",
+      "name": "Foseco India Limited",
+      "nse": "",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:icici bank",
+      "name": "ICICI Bank Limited",
+      "nse": "ICICIBANK",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:ideaforge technology",
+      "name": "Ideaforge Technology Limited",
+      "nse": "IDEAFORGE",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:indo mim",
+      "name": "Indo-MIM Limited",
+      "nse": "",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:jubilant foodworks",
+      "name": "Jubilant Foodworks Limited",
+      "nse": "JUBLFOOD",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:kusumgar",
+      "name": "Kusumgar Limited",
+      "nse": "",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:lalithaa jewellery mart",
+      "name": "Lalithaa Jewellery Mart Ltd.",
+      "nse": "",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:laser power and infra",
+      "name": "Laser Power And Infra Limited",
+      "nse": "",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:life insurance corporation of",
+      "name": "Life Insurance Corporation Of India",
+      "nse": "",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:mahindra and mahindra",
+      "name": "Mahindra & Mahindra Limited",
+      "nse": "M&M",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:manipal health enterprises",
+      "name": "Manipal Health Enterprises Ltd",
+      "nse": "",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:meesho",
+      "name": "Meesho Ltd.",
+      "nse": "MEESHO",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:milky mist dairy food",
+      "name": "Milky Mist Dairy Food Limited",
+      "nse": "",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:molbio diagnostics",
+      "name": "MOLBIO DIAGNOSTICS LIMITED",
+      "nse": "",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:multi commodity exchange of",
+      "name": "Multi Commodity Exchange of India Limited",
+      "nse": "MCX",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:netweb technologies",
+      "name": "Netweb Technologies India Limited",
+      "nse": "NETWEB",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:one 97 communications",
+      "name": "One 97 Communications Limited",
+      "nse": "PAYTM",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:pb fintech",
+      "name": "PB Fintech Limited",
+      "nse": "POLICYBZR",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:redington",
+      "name": "Redington (India) Ltd.",
+      "nse": "REDINGTON",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:sbi funds management",
+      "name": "SBI Funds Management Limited",
+      "nse": "",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:shadowfax technologies",
+      "name": "Shadowfax Technologies Limited",
+      "nse": "SHADOWFAX",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:shiprocket",
+      "name": "Shiprocket Limited",
+      "nse": "",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:sona blw precision forgings",
+      "name": "Sona BLW Precision Forgings Limited",
+      "nse": "SONACOMS",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:sterlite technologies",
+      "name": "Sterlite Technologies Limited",
+      "nse": "STLTECH",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:symbiotec pharmalab",
+      "name": "Symbiotec Pharmalab Limited",
+      "nse": "",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:td power systems",
+      "name": "TD Power Systems Limited",
+      "nse": "TDPOWERSYS",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:tenneco clean air",
+      "name": "Tenneco Clean Air India Limited",
+      "nse": "TENNIND",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:torrent pharmaceuticals",
+      "name": "Torrent Pharmaceuticals Limited",
+      "nse": "TORNTPHARM",
+      "pinnedAt": "2026-07",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:urban",
+      "name": "Urban Company Ltd.",
+      "nse": "URBANCO",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    },
+    {
+      "stockKey": "NAME:zydus lifesciences",
+      "name": "Zydus Lifesciences Limited",
+      "nse": "ZYDUSLIFE",
+      "pinnedAt": "2026-08",
+      "source": "auto"
+    }
+  ]
+}

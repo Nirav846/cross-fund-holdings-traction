@@ -1,0 +1,306 @@
+{
+  "monthId": "2026-08",
+  "source": "rules",
+  "report": "/home/runner/work/cross-fund-holdings-traction/cross-fund-holdings-traction/output/json/august_traction.json",
+  "topTraction": [
+    {
+      "rank": 1,
+      "stockKey": "NAME:multi commodity exchange of",
+      "name": "Multi Commodity Exchange of India Limited",
+      "score": 162.0772,
+      "fundCount": 30,
+      "fundDelta": 3,
+      "addCount": 11,
+      "reduceCount": 5,
+      "pctVsMid": "12.8528",
+      "pctVsSma": "12.8528",
+      "persistenceStatus": "continued_mixed"
+    },
+    {
+      "rank": 2,
+      "stockKey": "NAME:life insurance corporation of",
+      "name": "Life Insurance Corporation Of India",
+      "score": 148.5136,
+      "fundCount": 6,
+      "fundDelta": 6,
+      "addCount": 6,
+      "reduceCount": 0,
+      "pctVsMid": "",
+      "pctVsSma": "",
+      "persistenceStatus": "new_this_month"
+    },
+    {
+      "rank": 3,
+      "stockKey": "NAME:zydus lifesciences",
+      "name": "Zydus Lifesciences Limited",
+      "score": 141.3968,
+      "fundCount": 4,
+      "fundDelta": 4,
+      "addCount": 3,
+      "reduceCount": 0,
+      "pctVsMid": "1.9435",
+      "pctVsSma": "1.9435",
+      "persistenceStatus": "new_this_month"
+    },
+    {
+      "rank": 4,
+      "stockKey": "NAME:pb fintech",
+      "name": "PB Fintech Limited",
+      "score": 124.8164,
+      "fundCount": 23,
+      "fundDelta": 2,
+      "addCount": 11,
+      "reduceCount": 2,
+      "pctVsMid": "-39.673",
+      "pctVsSma": "-39.673",
+      "persistenceStatus": "continued_mixed"
+    },
+    {
+      "rank": 5,
+      "stockKey": "NAME:netweb technologies",
+      "name": "Netweb Technologies India Limited",
+      "score": 96.6436,
+      "fundCount": 7,
+      "fundDelta": 2,
+      "addCount": 6,
+      "reduceCount": 0,
+      "pctVsMid": "-3.567",
+      "pctVsSma": "-3.567",
+      "persistenceStatus": "reversed"
+    },
+    {
+      "rank": 6,
+      "stockKey": "NAME:shiprocket",
+      "name": "Shiprocket Limited",
+      "score": 94.3,
+      "fundCount": 4,
+      "fundDelta": 4,
+      "addCount": 4,
+      "reduceCount": 0,
+      "pctVsMid": "",
+      "pctVsSma": "",
+      "persistenceStatus": "new_this_month"
+    },
+    {
+      "rank": 7,
+      "stockKey": "NAME:dhoot transmission",
+      "name": "Dhoot Transmission Ltd.",
+      "score": 91.95,
+      "fundCount": 6,
+      "fundDelta": 6,
+      "addCount": 6,
+      "reduceCount": 0,
+      "pctVsMid": "",
+      "pctVsSma": "",
+      "persistenceStatus": "new_this_month"
+    },
+    {
+      "rank": 8,
+      "stockKey": "NAME:tenneco clean air",
+      "name": "Tenneco Clean Air India Limited",
+      "score": 90.1535,
+      "fundCount": 7,
+      "fundDelta": 3,
+      "addCount": 6,
+      "reduceCount": 0,
+      "pctVsMid": "-10.9208",
+      "pctVsSma": "-10.9208",
+      "persistenceStatus": "still_adding"
+    },
+    {
+      "rank": 9,
+      "stockKey": "NAME:bosch",
+      "name": "Bosch Limited",
+      "score": 87.9771,
+      "fundCount": 7,
+      "fundDelta": 3,
+      "addCount": 5,
+      "reduceCount": 0,
+      "pctVsMid": "-0.4372",
+      "pctVsSma": "-0.4372",
+      "persistenceStatus": "still_adding"
+    },
+    {
+      "rank": 10,
+      "stockKey": "NAME:td power systems",
+      "name": "TD Power Systems Limited",
+      "score": 83.9954,
+      "fundCount": 6,
+      "fundDelta": 0,
+      "addCount": 6,
+      "reduceCount": 0,
+      "pctVsMid": "23.3115",
+      "pctVsSma": "23.3115",
+      "persistenceStatus": "still_adding"
+    }
+  ],
+  "insights": [
+    {
+      "id": "ins_01",
+      "section": "still_early",
+      "headline": "Still early: Zydus Lifesciences Limited",
+      "action": "research",
+      "stockKeys": [
+        "NAME:zydus lifesciences"
+      ],
+      "body": "Zydus Lifesciences Limited shows multi-fund adds while price is still near the 30d SMA (funds 0\u21924, pctVsSma=1.9435; funds include Quant Mid Cap Fund G 08, Quant Flexi Cap Fund G 08). Next: open the stock card and compare add breadth vs how far price already moved.",
+      "citations": [
+        {
+          "stockKey": "NAME:zydus lifesciences",
+          "fields": {
+            "fundCount": 4,
+            "addCount": 3,
+            "reduceCount": 0,
+            "pctVsSma": "1.9435"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_02",
+      "section": "still_early",
+      "headline": "Still early: Netweb Technologies India Limited",
+      "action": "research",
+      "stockKeys": [
+        "NAME:netweb technologies"
+      ],
+      "body": "Netweb Technologies India Limited shows multi-fund adds while price is still near the 30d SMA (funds 5\u21927, pctVsSma=-3.567; funds include Helios Mid Cap 08, Helios Small Cap 08). Next: open the stock card and compare add breadth vs how far price already moved.",
+      "citations": [
+        {
+          "stockKey": "NAME:netweb technologies",
+          "fields": {
+            "fundCount": 7,
+            "addCount": 6,
+            "reduceCount": 0,
+            "pctVsSma": "-3.567"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_03",
+      "section": "still_early",
+      "headline": "Still early: Tenneco Clean Air India Limited",
+      "action": "research",
+      "stockKeys": [
+        "NAME:tenneco clean air"
+      ],
+      "body": "Tenneco Clean Air India Limited shows multi-fund adds while price is still near the 30d SMA (funds 4\u21927, pctVsSma=-10.9208; funds include Sbi Small Cap 08, Mirae Asset Flexi Cap 08). Next: open the stock card and compare add breadth vs how far price already moved.",
+      "citations": [
+        {
+          "stockKey": "NAME:tenneco clean air",
+          "fields": {
+            "fundCount": 7,
+            "addCount": 6,
+            "reduceCount": 0,
+            "pctVsSma": "-10.9208"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_04",
+      "section": "exit_pressure",
+      "headline": "Exit pressure: Azad Engineering Ltd",
+      "action": "caution",
+      "stockKeys": [
+        "NAME:azad engineering"
+      ],
+      "body": "Azad Engineering Ltd shows multi-fund selling (reduceCount=1, funds 4\u21924; funds include Motilal Oswal Manufacturing 08, Icici Pru Flexi Cap Fund G 08). Next: open reduce fund lines and decide whether this challenges a held long.",
+      "citations": [
+        {
+          "stockKey": "NAME:azad engineering",
+          "fields": {
+            "fundCount": 4,
+            "addCount": 0,
+            "reduceCount": 1,
+            "persistence.status": "still_reducing",
+            "priorFundCount": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_05",
+      "section": "exit_pressure",
+      "headline": "Exit pressure: Happy Forgings Limited",
+      "action": "caution",
+      "stockKeys": [
+        "NAME:happy forgings"
+      ],
+      "body": "Happy Forgings Limited shows multi-fund selling (reduceCount=2, funds 0\u21925; funds include Nippon India Flexi Cap 08, Kotak Small Cap Fund G 08). Next: open reduce fund lines and decide whether this challenges a held long.",
+      "citations": [
+        {
+          "stockKey": "NAME:happy forgings",
+          "fields": {
+            "fundCount": 5,
+            "addCount": 0,
+            "reduceCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_06",
+      "section": "exit_pressure",
+      "headline": "Exit pressure: Bajaj Auto Limited",
+      "action": "caution",
+      "stockKeys": [
+        "NAME:bajaj auto"
+      ],
+      "body": "Bajaj Auto Limited shows multi-fund selling (reduceCount=1, funds 5\u21925; funds include Bandhan Large Cap 08, Sbi Flexicap 08). Next: open reduce fund lines and decide whether this challenges a held long.",
+      "citations": [
+        {
+          "stockKey": "NAME:bajaj auto",
+          "fields": {
+            "fundCount": 5,
+            "addCount": 0,
+            "reduceCount": 1,
+            "persistence.status": "still_reducing",
+            "priorFundCount": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_07",
+      "section": "debate",
+      "headline": "Debate: Multi Commodity Exchange of India Limited",
+      "action": "caution",
+      "stockKeys": [
+        "NAME:multi commodity exchange of"
+      ],
+      "body": "Multi Commodity Exchange of India Limited shows fund disagreement (addCount=11, reduceCount=5, fundCount=30; funds include Nippon India Flexi Cap 08, Franklin India Mid Cap Fund G 08). Next: open add and reduce fund cards and note which AMCs disagree.",
+      "citations": [
+        {
+          "stockKey": "NAME:multi commodity exchange of",
+          "fields": {
+            "fundCount": 30,
+            "addCount": 11,
+            "reduceCount": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "ins_08",
+      "section": "debate",
+      "headline": "Debate: PB Fintech Limited",
+      "action": "caution",
+      "stockKeys": [
+        "NAME:pb fintech"
+      ],
+      "body": "PB Fintech Limited shows fund disagreement (addCount=11, reduceCount=2, fundCount=23; funds include Helios Mid Cap 08, Helios Flexi Cap 08). Next: open add and reduce fund cards and note which AMCs disagree.",
+      "citations": [
+        {
+          "stockKey": "NAME:pb fintech",
+          "fields": {
+            "fundCount": 23,
+            "addCount": 11,
+            "reduceCount": 2
+          }
+        }
+      ]
+    }
+  ]
+}
